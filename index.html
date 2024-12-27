@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Colorful Word</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
+        .scrolling-text {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 150px;  /* Huge text */
+            font-family: Arial, sans-serif;
+            animation: scroll 10s linear infinite, colorChange 10s linear infinite;  /* Animation for scrolling & color change */
+        }
+        
+        @keyframes scroll {
+            from {
+                left: 100%;
+            }
+            to {
+                left: -100%;
+            }
+        }
+        
+        @keyframes colorChange {
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: blue;
+            }
+            100% {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-text">you are gay <br>
+                                 y r u gay </div>
+</body>
+</html>
